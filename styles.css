@@ -1,0 +1,41 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+} 
+body{
+    background-color: rgb(2, 0, 21);
+}
+.menu-toggle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+.menu-toggle span{
+    width:70px;
+    height:8px;
+    display: block;
+    background-color: rgb(134, 245, 8);
+    margin:8px;
+    cursor: pointer;
+    transition:0.3s all;
+}
+.menu-toggle.active span:nth-child(1){
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: rgb(244, 4, 4);
+    top:8px;
+    left: -50px;
+}
+.menu-toggle.active span:nth-child(2){
+    display:none;
+}
+.menu-toggle.active span:nth-child(3){
+    transform: rotate(-45deg);
+    position: absolute;
+    background-color: rgb(244, 4, 4);
+    top:8px;
+    left: -50px;
+}
